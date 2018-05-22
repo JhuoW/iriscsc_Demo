@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xzmc.airuishi"
+    android:versionCode="2"
+    android:versionName="2.3.5" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 发送短信权限  3 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <permission
+        android:name="com.xzmc.airuishi.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.xzmc.airuishi.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.xzmc.airuishi.base.App"
+        android:allowBackup="true"
+        android:icon="@drawable/eay_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+
+        <!-- 展开页 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 主界面 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name=".activity.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 地图 -->
+        <activity
+            android:name=".activity.BaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- choose video -->
+        <activity
+            android:name=".activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 语音通话 -->
+        <activity
+            android:name=".activity.VoiceCallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" >
+        </activity>
+
+        <!-- 视频通话 -->
+        <activity
+            android:name=".activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name=".activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name=".activity.GroupDetailsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.EditActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.GroupBlacklistActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.GroupPickContactsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.PickContactNoCheckboxActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ClubActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name=".activity.ShowNormalFileActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ShowBigImage"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ShowVideoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.RecorderVideoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.PostDetaileActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.SuggestionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.AboutusActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.MyCollectionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ChangePassword"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.RegistActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.SubmitSuggestionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.NewFriendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.SearchResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.ContactActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.SelectAddressActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.AddCommmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.LocationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ImageBrowserActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ChangeInformationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.UserDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.CropImageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SubmitRequestActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".activity.PostDetailWebViewActivity" >
+        </activity>
+        <activity android:name=".activity.QuestionActivity" >
+        </activity>
+        <activity android:name=".activity.QusetionaireActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyOptDocActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyOptDocDetailActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyAllOptDocActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyArticleActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyLessonActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.LessonDetailActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.StudentDetailActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.StudentDocActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.InputInfoActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.StudentAllOptDocActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyClientActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyAllStudentActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyTeacherActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.TeacherDetailActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.MyLesson_StudentActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.LessonDetail_StudentActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.PushActivity" >
+        </activity>
+        <activity android:name="com.xzmc.airuishi.activity_v2.PushActivity2" >
+        </activity>
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="qixinplus#airuishi" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.xzmc.airuishi" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.xzmc.airuishi" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.xzmc.airuishi.receive.MyReceive"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.xzmc.airuishi" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="be41a369b9166fe21a149ba2" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- Don't forgot InitActivity -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="7MYYZOndbcVUB2KPwueozpEo" />
+
+        <!-- umeng -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56344a5667e58ec7ca000e21" >
+        </meta-data>
+
+        <activity
+            android:name="com.xzmc.airuishi.activity.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

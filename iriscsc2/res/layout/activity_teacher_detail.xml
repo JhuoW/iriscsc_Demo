@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:background="@color/white" >
+
+        <com.xzmc.airuishi.view.RoundImageView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_default_avatar_selector" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/avatar"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@id/avatar"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/avatar"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@id/name"
+            android:text="sex"
+            android:textColor="@color/gray_font_me"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name"
+            android:layout_below="@id/name"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职位："
+                android:textColor="@color/gray_font_me" />
+            <TextView 
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xx"
+                android:id="@+id/position"
+                android:textColor="@color/gray_font_me"/>
+         
+        </LinearLayout>
+        
+           
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介："
+                android:layout_below="@id/avatar"
+                android:textSize="16sp"
+                android:id="@+id/in"
+                android:layout_alignLeft="@id/avatar"
+                />
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/in"
+                android:id="@+id/introduce"
+                android:singleLine="false"
+                android:text="........................................................"
+                android:layout_alignTop="@id/in"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:id="@+id/rl_chat"
+        android:background="@color/white">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:paddingBottom="10dip"
+            android:id="@+id/img"
+            android:src="@drawable/icon_mine_doctor"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/img"
+            android:id="@+id/name2"
+            android:layout_toRightOf="@id/img"/>
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="通过文字，图片与专家在线进行交流"
+            android:layout_below="@id/name2"
+            android:layout_alignLeft="@id/name2"
+            android:textColor="@color/gray_font_me"
+            android:layout_marginTop="10dip"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:id="@+id/rl_phone"
+        android:background="@color/white">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:paddingBottom="10dip"
+            android:id="@+id/img2"
+            android:src="@drawable/icon_voice"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话咨询"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/img2"
+            android:id="@+id/name3"
+            android:layout_toRightOf="@id/img2"/>
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="与专家语音，沟通更加方便"
+            android:layout_below="@id/name3"
+            android:layout_alignLeft="@id/name3"
+            android:textColor="@color/gray_font_me"
+            android:layout_marginTop="10dip"/>
+    </RelativeLayout>
+
+</LinearLayout>

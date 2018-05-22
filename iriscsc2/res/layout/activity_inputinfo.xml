@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ebebeb"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="SL_L:" />
+
+                <EditText
+                    android:id="@+id/sl_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="左球镜"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="SL_R:" />
+
+                <EditText
+                    android:id="@+id/sl_r"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="右球镜"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="CL_L:" />
+
+                <EditText
+                    android:id="@+id/cl_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="左柱镜"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="CL_R:" />
+
+                <EditText
+                    android:id="@+id/cl_r"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="右柱镜"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Axial_L:" />
+
+                <EditText
+                    android:id="@+id/axial_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="左轴位"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Axial_R:" />
+
+                <EditText
+                    android:id="@+id/axial_r"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="右轴位"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Nv_L:" />
+
+                <EditText
+                    android:id="@+id/nv_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="左裸眼视力"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Nv_R:" />
+
+                <EditText
+                    android:id="@+id/nv_r"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="右裸眼视力"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Cv_L:" />
+
+                <EditText
+                    android:id="@+id/cv_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="左矫正视力"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Cv_R:" />
+
+                <EditText
+                    android:id="@+id/cv_r"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="右矫正视力"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="AD:" />
+
+                <EditText
+                    android:id="@+id/ad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="下加光"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="PD:" />
+
+                <EditText
+                    android:id="@+id/pd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base_action_bar_height"
+                    android:background="@null"
+                    android:hint="瞳距"
+                    android:paddingLeft="15dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="5.0"
+                    android:textColor="#888888"
+                    android:textColorHint="#888888"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg_selector"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

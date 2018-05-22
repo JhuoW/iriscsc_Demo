@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_recent_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_default_avatar" 
+            />
+
+        <TextView
+            android:id="@+id/recent_unread"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@+id/iv_recent_avatar"
+            android:layout_above="@+id/iv_recent_avatar"
+            android:background="@drawable/msg_tips"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginBottom="-13dp"
+            android:gravity="center"
+            android:text="23"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:id="@+id/recent_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="58.0dip"
+             android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_toRightOf="@id/iv_recent_avatar"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:id="@+id/recent_msg_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recent_name_text"
+            android:layout_toRightOf="@id/iv_recent_avatar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:textColor="#ff777777"
+            android:layout_marginTop="3dp"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/recent_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_above="@id/recent_msg_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="10dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:singleLine="true"
+            android:textColor="#ff777777"
+            android:textSize="12.0sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/base_horizontal_line"></View>
+
+</RelativeLayout>

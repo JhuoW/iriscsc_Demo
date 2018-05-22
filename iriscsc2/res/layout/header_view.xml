@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:background="@color/white"
+         >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dip"
+            android:id="@+id/rl_professor"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/img_contact_avatar"
+                style="@style/My.ImageView.Photo_Avatar"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_default_avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_contact_avatar"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_contact_name"
+                    style="@style/My.TextView._Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="专家"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/phone_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="简介:"
+                        android:textColor="#888888"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_contact_phone"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="1520521773311111111111111111111111111111"
+                        android:singleLine="false"
+                        android:textColor="#888888"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                
+           <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="在线时间:"
+                        android:textColor="#888888"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_onlinetime"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="2015"
+                        android:singleLine="false"
+                        android:textColor="#888888"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_questionaire"
+        android:background="@color/white"
+        android:layout_below="@+id/layout" >
+
+        <ImageView
+            android:id="@+id/img_contact_avatar2"
+            style="@style/My.ImageView.Photo_Avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ty_image_jty2" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问卷调查"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/img_contact_avatar2"/>
+        
+    </RelativeLayout>
+    
+     <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+</LinearLayout>

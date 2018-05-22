@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rl_doc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@color/white" >
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+                        android:id="@+id/x"
+            android:layout_centerVertical="true"
+            android:src="@drawable/allrecord" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="全部档案"
+                        android:layout_toRightOf="@id/x"
+            
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="时间"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <com.xzmc.qixinplus.ui.xlist.XListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:divider="@drawable/base_horizontal_line"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

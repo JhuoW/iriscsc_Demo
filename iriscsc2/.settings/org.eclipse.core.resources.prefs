@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/com/xzmc/airuishi/bean/ChannelItem.java=UTF-8
+encoding//src/com/xzmc/airuishi/db/FriendsTable.java=UTF-8
+encoding//src/com/xzmc/airuishi/db/Post.java=UTF-8
+encoding//src/com/xzmc/airuishi/db/UserDBHelper.java=UTF-8
+encoding//src/com/xzmc/airuishi/utils/NetAsyncTask.java=UTF-8
+encoding//src/com/xzmc/airuishi/utils/Utils.java=UTF-8
+encoding//src/com/xzmc/airuishi/view/BaseListView.java=UTF-8
+encoding//src/com/xzmc/airuishi/view/ClearEditText.java=UTF-8
+encoding//src/com/xzmc/airuishi/view/ColumnHorizontalScrollView.java=UTF-8
+encoding//src/com/xzmc/airuishi/view/MyNotification.java=UTF-8
+encoding//src/com/xzmc/airuishi/view/PlayButton.java=UTF-8
+encoding//src/com/xzmc/qixinplus/ui/xlist/XListView.java=UTF-8
+encoding//src/com/xzmc/qixinplus/ui/xlist/XListViewHeader.java=UTF-8
+encoding//src/com/zxmc/airuishi/http/APIHelper.java=UTF-8
+encoding/<project>=UTF-8

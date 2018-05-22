@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <EditText
+        android:id="@+id/blogaddcomment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:hint="添加评论"
+        android:paddingTop="8dip"
+        android:paddingRight="8dip"
+        android:paddingLeft="8dip"
+        android:textColor="#444444"
+        android:textColorHint="#aaaaaa"
+        android:background="#ffffff"
+        android:textSize="16sp" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="right"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/blogaddcomment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#80333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="/140"
+            android:textColor="#80333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/v5_0_1_publisher_buttons_area_bg"
+        android:orientation="horizontal" >
+
+        
+
+      
+
+       
+
+        <ImageButton
+            android:id="@+id/blogaddcomment_emoticon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:background="@drawable/v5_0_1_publisher_button_bg"
+            android:src="@drawable/v5_0_1_publisher_emotion_button" />
+    </LinearLayout>
+    -->
+
+
+    <!--
+    <GridView
+        android:id="@+id/blogaddcomment_emoticons"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="@drawable/v5_0_1_publisher_emotion_area_bg"
+        android:cacheColorHint="#00000000"
+        android:focusableInTouchMode="true"
+        android:horizontalSpacing="5dip"
+        android:listSelector="#00000000"
+        android:numColumns="8"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip"
+        android:visibility="gone" />
+
+    -->
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+{ "ret":"success","ID":"100000103",
+"imgUrl":"http://app.iriscsc.com:8080/UserFile/100000103/Image/Picture/1000001032015115124151.jpg",
+"nickName":"卓伟","sex":"男","address":"中国江苏省徐州市云龙区彭旅路","authority":"default",
+"brief":"","level":null,"isProfessor":null,"professorInfo":null,
+"starttime":null,
+"endtime":null,
+"onlineTime":null,
+"IsCustomer":false,
+"IsOpto":false,
+"IsBusiness":false,
+"IsStudent":false,
+"IsSuperOpto":false}

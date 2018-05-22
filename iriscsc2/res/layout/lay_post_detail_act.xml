@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_root"
+    android:background="#ffffff"
+     >
+
+    <include layout="@layout/base_header_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:background="#ffffff"
+        android:layout_marginBottom="48dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/ivDetailHead"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/icon_start"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvDetailAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/layout_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="#b1aeab" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="热门评论"
+                        android:textColor="#47494c"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:src="#eae7e5" />
+                </LinearLayout>
+
+                <ImageView 
+                    android:src="@drawable/line_jiao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    />
+                <ListView
+                    android:id="@+id/comment_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="8dp"
+                    android:divider="@null"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="hahahahahaha"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/blog_comment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/v5_0_1_comment_btn_layout_bg"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/blog_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:hint="写点评论吧"
+            android:padding="8dip"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/blog_iscollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:src="@drawable/icon_collection"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

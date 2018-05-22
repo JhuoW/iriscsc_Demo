@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/relaCenterVpParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 设置拉滚动条时 ，边框渐变的放向。none（边框颜色不变），horizontal（水平方向颜色变淡），vertical（垂直方向颜色变淡）。 -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/centerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewPage_height"
+                android:background="#44000000"
+                android:fadingEdge="horizontal"
+                android:scrollbars="horizontal" />
+
+            <RadioGroup
+                android:id="@+id/centerRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/centerViewPager"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/base_horizontal_line"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

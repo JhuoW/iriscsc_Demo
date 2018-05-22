@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@color/theme"
+                android:paddingBottom="10dip"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="10dip"
+                android:text="时间/参数"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="01-27"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_column"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <HorizontalScrollView
+                android:id="@+id/mColumnHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   SL_L\n(左球镜)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/SL_L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   SL_R\n(右球镜)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/SL_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   CL_L\n(左柱镜)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/CL_L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   CL_R\n(右柱镜)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/CL_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   Axial_L\n(左轴位)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/Axial_L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   Axial_R\n(右轴位)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/Axial_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   Nv_L\n(左裸眼视力)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/Nv_L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   Nv_R\n(右裸眼视力)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/Nv_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   Cv_L\n(左矫正视力)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/Cv_L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   Cv_R\n(右矫正视力)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/Cv_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   AD\n(下加光)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/AD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@color/theme"
+                            android:paddingLeft="3dip"
+                            android:paddingRight="3dip"
+                            android:paddingTop="5dip"
+                            android:text="   PD\n(瞳距)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/PD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip"
+                            android:text="1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
